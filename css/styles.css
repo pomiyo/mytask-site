@@ -963,3 +963,58 @@ nav{
 }
 
 }
+
+/* ==========================================================
+   BACK TO TOP
+========================================================== */
+
+.back-to-top {
+
+    position: fixed;
+
+    right: 24px;
+
+    bottom: 24px;
+
+    width: 52px;
+
+    height: 52px;
+
+    border: none;
+
+    border-radius: 50%;
+
+    background: var(--primary);
+
+    color: white;
+
+    font-size: 22px;
+
+    cursor: pointer;
+
+    box-shadow: var(--shadow);
+
+    opacity: 0;
+
+    visibility: hidden;
+
+    transition: .25s;
+
+    z-index: 999;
+
+}
+
+.back-to-top:hover {
+
+    transform: translateY(-3px);
+
+}
+
+.back-to-top.visible {
+
+    opacity: 1;
+
+    visibility: visible;
+
+}
+
