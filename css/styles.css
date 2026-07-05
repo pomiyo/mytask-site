@@ -40,22 +40,22 @@
 
 @media (prefers-color-scheme: dark){
 
-:root{
-
-    --surface:#121212;
-
-    --surface-alt:#1b1b1b;
-
-    --text:#f3f4f6;
-
-    --text-light:#c9ced6;
-
-    --border:#303030;
-
-    --shadow:
-        0 10px 35px rgba(0,0,0,.45);
-
-}
+   :root{
+   
+       --surface:#121212;
+   
+       --surface-alt:#1b1b1b;
+   
+       --text:#f3f4f6;
+   
+       --text-light:#c9ced6;
+   
+       --border:#303030;
+   
+       --shadow:
+           0 10px 35px rgba(0,0,0,.45);
+   
+   }
 
 }
 
@@ -174,12 +174,12 @@ header{
 
 @media(prefers-color-scheme:dark){
 
-header{
-
-    background:
-        rgba(18,18,18,.82);
-
-}
+   header{
+   
+       background:
+           rgba(18,18,18,.82);
+   
+   }
 
 }
 
@@ -324,13 +324,13 @@ nav a.active{
 
 @media(prefers-color-scheme:dark){
 
-.badge{
-
-    background:#204422;
-
-    color:#A5D6A7;
-
-}
+   .badge{
+   
+       background:#204422;
+   
+       color:#A5D6A7;
+   
+   }
 
 }
 
