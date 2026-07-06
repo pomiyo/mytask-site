@@ -360,23 +360,55 @@ nav a.active{
 
 
 
-.hero-image{
+.hero-image {
 
-    display:flex;
+    display: flex;
 
-    justify-content:center;
+    justify-content: center;
+
+    align-items: center;
+
+    gap: 0;
+
+    position: relative;
 
 }
 
 
 
-.hero-image img{
+.hero-image img {
 
-    width:320px;
+    width: 270px;
 
-    border-radius:32px;
+    border-radius: 32px;
 
-    box-shadow:var(--shadow);
+    box-shadow: var(--shadow);
+
+    transition: transform .35s ease;
+
+}
+
+.hero-image img:first-child {
+
+    transform:
+        rotate(-8deg)
+        translateX(35px);
+
+}
+
+.hero-image img:last-child {
+
+    transform:
+        rotate(8deg)
+        translateX(-35px);
+
+}
+
+.hero-image img:hover {
+
+    transform: scale(1.05);
+
+    z-index: 5;
 
 }
 
