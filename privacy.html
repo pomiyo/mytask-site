@@ -210,7 +210,7 @@
 
             <p>
 
-                MyTask does not operate a speech recognition service and does not receive or store your spoken audio on developer-operated servers.
+                If your device uses a provider that processes speech in the cloud, your recorded speech is sent to that provider over the internet. What that provider does with it is covered by its own privacy policy, not this one. Speech-to-text may also be unavailable on a device that has no recognition provider installed.
 
             </p>
 
@@ -259,7 +259,13 @@
 
             <p>
 
-                MyTask can generate QR codes containing a standard vCalendar event.
+                MyTask can generate a QR code for a task, containing a standard vCalendar event.
+
+            </p>
+
+            <p>
+
+                The QR code contains the task's own details: its title, its description, a start and end time, and — when you set a reminder — the reminder description. Anyone who scans the code, or who receives a screenshot or photo of it, receives those details. Treat showing or sending a QR code the same way you would treat sharing the task itself.
 
             </p>
 
@@ -291,7 +297,7 @@
 
             <p>
 
-                MyTask's features do not require an internet connection, and the developer does not operate servers that receive your tasks, attachments, recordings, or other content.
+                Creating and managing tasks, attachments, reminders and QR codes works without an internet connection, and text recognition (OCR) runs on your device using a model bundled with the app. Speech-to-text is the exception: it depends on the speech recognition provider your device is configured to use, which may send your speech over the internet (see "Speech Recognition" above). The developer does not operate servers that receive your tasks, attachments, recordings, or other content.
 
             </p>
 
@@ -363,7 +369,7 @@
 
             <p>
 
-                MyTask's encrypted task database and its encryption key are excluded from Android's automatic backup and device transfer.
+                MyTask asks Android to leave its encrypted task database, that database's temporary files, and the key that unlocks it out of Android's automatic backup and out of device-to-device transfer. Android and your device manufacturer carry out that request, so we can describe what the app asks for, not guarantee what every device or backup service does.
 
             </p>
 
@@ -378,9 +384,9 @@
             <p>
 
                 MyTask also provides a manual Backup &amp; Restore feature.
-                It creates a password-encrypted backup file containing your tasks, attachments, and the database key.
+                It creates a password-encrypted backup file containing your tasks, your attached photos, documents, voice notes and QR images, and the key to the database.
                 You choose where the file goes: it can be saved to your device's Downloads folder or shared with an app you select.
-                The developer never receives this file. Keep your backup password safe, because it cannot be recovered.
+                MyTask never sends this file anywhere on its own, and it is not sent to the developer unless you deliberately choose to send it. Keep your backup password safe, because it cannot be recovered.
 
             </p>
 
@@ -406,9 +412,19 @@
 
             <p>
 
-                Your data stays on your device until you delete it.
-                Deleting a task in MyTask removes the task and its attached files from the app.
-                Uninstalling MyTask or clearing its storage deletes all data stored by the app.
+                Your data stays in MyTask on your device until you delete it, and the developer never receives a copy. Android itself may keep a backup of some app files, as described under "Data Backup" above.
+
+            </p>
+
+            <p>
+
+                Deleting a task removes the task, its attached photos, documents, voice notes and QR image, and cancels the reminder you set for it. If the app is stopped by the system at the exact moment a deletion is running, a reminder notification or a leftover file may survive; deleting the task again, or clearing the app's storage, removes anything left behind.
+
+            </p>
+
+            <p>
+
+                Uninstalling MyTask or clearing its storage deletes all data stored by the app on that device. It does not delete backup files you exported yourself, and it does not delete anything Android has already copied into its own backup, which is managed by Android and your Google account rather than by MyTask.
 
             </p>
 
