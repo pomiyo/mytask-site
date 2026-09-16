@@ -54,7 +54,7 @@
 
             <p>
 
-                Effective Date: July 2026
+                Effective Date: September 2026
 
             </p>
 
@@ -74,7 +74,8 @@
 
             <p>
 
-                MyTask is designed with privacy as a core principle.
+                MyTask is an Android task management app developed by Edward Sampayan.
+                It is designed with privacy as a core principle.
                 This application is offline-first and stores your task data locally on your Android device.
                 We do not operate servers that collect or store your task information.
 
@@ -142,7 +143,9 @@
 
             <p>
 
-                Used only when you choose to capture an image for a task.
+                MyTask does not request the camera permission itself.
+                When you choose to capture an image for a task, MyTask opens your device's camera app,
+                and the photo you take is saved in MyTask's private storage.
 
             </p>
 
@@ -233,7 +236,10 @@
 
             <p>
 
-                Text recognition is performed entirely on your device using a bundled machine learning model. No images or extracted text are sent to external servers.
+                Text recognition is performed on your device using Google ML Kit with a bundled machine learning model, so it works without an internet connection.
+                MyTask does not upload your images or the extracted text to any server.
+                Google's published list of data collected by ML Kit does not include your images or the recognized text.
+                ML Kit may send limited usage and diagnostic information to Google, as described under "Internet &amp; Third-Party Services" below.
 
             </p>
 
@@ -285,27 +291,61 @@
 
             <p>
 
-                The current version of MyTask does not request the Android INTERNET permission.
+                MyTask's features do not require an internet connection, and the developer does not operate servers that receive your tasks, attachments, recordings, or other content.
 
             </p>
 
             <p>
 
-                MyTask does not use:
+                MyTask uses Google ML Kit for on-device text recognition.
+                ML Kit includes a Google component that adds the Android INTERNET permission to the app
+                and may send limited usage and diagnostic information to Google, such as:
 
             </p>
 
             <ul>
 
-                <li>Firebase</li>
+                <li>Device information (such as manufacturer, model, and Android version)</li>
 
-                <li>Analytics services</li>
+                <li>App package name and version</li>
+
+                <li>Per-installation identifiers that are not intended to identify you or your device</li>
+
+                <li>Performance metrics, feature configuration, input and output sizes, event types, and error codes</li>
+
+            </ul>
+
+            <p>
+
+                According to Google, this data is encrypted in transit and is not transferred to third parties.
+                For details, see
+                <a href="https://developers.google.com/ml-kit/android-data-disclosure" target="_blank" rel="noopener">Google's ML Kit data disclosure</a>.
+
+            </p>
+
+            <p>
+
+                Apart from ML Kit, MyTask does not include:
+
+            </p>
+
+            <ul>
 
                 <li>Advertising SDKs</li>
 
-                <li>Developer-operated cloud services</li>
+                <li>Analytics or crash-reporting services added by the developer</li>
+
+                <li>Developer-operated cloud services or user accounts</li>
 
             </ul>
+
+            <p>
+
+                Actions you choose to take may involve other apps or services, such as opening a link in your browser,
+                emailing the developer from your email app, or sharing a backup file with an app you select.
+                Those apps and services are governed by their own privacy policies.
+
+            </p>
 
         </div>
 
@@ -323,13 +363,59 @@
 
             <p>
 
-                Task data is intentionally excluded from Android's automatic backup and device transfer mechanisms.
+                MyTask's encrypted task database and its encryption key are excluded from Android's automatic backup and device transfer.
 
             </p>
 
             <p>
 
-                If you uninstall the application or change devices without manually exporting your data (if such functionality becomes available), your task data may not be recoverable.
+                Photos, documents, voice notes, and QR code images attached to tasks are stored in MyTask's private app storage.
+                Depending on your device settings, these files may be included in Android's automatic backup or device transfer.
+                Without the task database, they are not linked to your tasks.
+
+            </p>
+
+            <p>
+
+                MyTask also provides a manual Backup &amp; Restore feature.
+                It creates a password-encrypted backup file containing your tasks, attachments, and the database key.
+                You choose where the file goes: it can be saved to your device's Downloads folder or shared with an app you select.
+                The developer never receives this file. Keep your backup password safe, because it cannot be recovered.
+
+            </p>
+
+            <p>
+
+                If you uninstall the app or change devices without exporting a backup, your task data may not be recoverable.
+
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+<section>
+
+    <div class="container">
+
+        <div class="card">
+
+            <h2>Data Retention and Deletion</h2>
+
+            <p>
+
+                Your data stays on your device until you delete it.
+                Deleting a task in MyTask removes the task and its attached files from the app.
+                Uninstalling MyTask or clearing its storage deletes all data stored by the app.
+
+            </p>
+
+            <p>
+
+                Backup files you exported are not deleted automatically. You can delete them yourself at any time.
+                Because the developer does not collect your task data, there is no copy on a developer server to delete.
 
             </p>
 
@@ -390,7 +476,8 @@
 
             <p>
 
-                If you have questions regarding this Privacy Policy, please visit the Contact page on this website.
+                If you have questions regarding this Privacy Policy, email the developer at
+                <strong>imedward.sam@gmail.com</strong> or visit the Contact page on this website.
 
             </p>
 
