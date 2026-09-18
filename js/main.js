@@ -47,7 +47,7 @@ function initializeScrollReveal() {
 
     document
         .querySelectorAll(
-            ".card, .privacy-item, .screenshots img, .section-title, .hero-text, .hero-image"
+            ".card, .privacy-item, .shot, .section-title, .hero-text, .hero-image"
         )
         .forEach(element => {
 
